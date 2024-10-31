@@ -1,0 +1,217 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   font-family: MERRIWEATHER, sans-serif;   
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+main {
+    margin: 10px;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #2f3e46;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+/* Unified HR Styles */
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: #333; 
+    margin: 5px 0;
+}
+
+.signup-section hr:nth-of-type(2) {
+    height: 1px;
+}
+
+form hr {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 1px;
+
+}
+
+
+/* Signup Section Styles */
+.signup-section {
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-section h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signup-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #828282;
+}
+.contact-information div {
+    padding-bottom: 10px;
+}
+
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 2px solid #cfcfcf;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+}
+
+input::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+select {
+    color:#828282
+}
+
+
+/* Zip Code Specific Styles */
+label[for="zip-code"],
+input[id="zip-code"] {
+    display: block; 
+    width: 100%; 
+}
+
+input[id="zip-code"] {
+    max-width: 50%; 
+    margin-top: 15px;
+}
+
+
+/* Radio and Checkbox Styles */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.newsletter div {
+    padding: 5px;
+}
+
+
+/* Focus Styles */
+input:focus[type="text"],
+input:focus[type="email"],
+input:focus[type="tel"],
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 3px solid #3fc3b1;
+    transition: border-color 0.8s ease, background-color 0.8s ease;
+}
+
+
+/* Button Styles */
+.submit-btn {
+    padding: 15px;
+    background-color: #37b5a4;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #2a9386;
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2f3e46;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .signup-section {
+        max-width: 80%;
+    }
+
+    .contact-information div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-information div label {
+        width: 30%;
+    }
+
+    input[id="zip-code"] {
+        margin-right: 25%;
+        margin-right: 47%;
+    }
+
+}
